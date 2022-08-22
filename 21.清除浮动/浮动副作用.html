@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container::after {
+            /* border: 1px solid red; */
+            content: "";
+            /* overflow: hidden; */
+            display: block;
+            clear: both;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #fff176;
+            /*1.浮动元素会造成父类元素高度塌陷，高度变为0px,因为父类元素的高度是有子类元素撑开的
+                解决方案有很多种
+                1. 父元素设置高度
+                2. 受影响的元素增加clear属性
+                3. overflow清除浮动
+                4. 伪对象方式  为父标签添加伪类`after`,设置空的内容，并且使用`clear:both`;
+            
+            */
+            float: left;
+            margin: 5px;
+        }
+
+        /*2.浮动元素会对后续元素产生影响*/
+        .nav {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">11</div>
+        <div class="box">11</div>
+        <div class="box">11</div>
+    </div>
+    <div class="nav"></div>
+</body>
+
+</html>

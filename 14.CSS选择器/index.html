@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器</title>
+    <style>
+        /*全局选择器：可以与任何元素匹配，优先级最低，一般做样式初始化*/
+        * {
+            font-size: 30px;
+            color: rgb(255, 0, 25);
+        }
+
+        /*元素选择器，描述共性，无法描述元素的个性*/
+        h1 {
+            color: blue;
+        }
+
+        /*类选择器 灵活、*/
+        .font {
+            font-size: large;
+        }
+
+        .color {
+            color: springgreen;
+        }
+
+        .class2 {
+            font-size: small;
+            color: blue;
+        }
+
+        .class1{
+            font-size: large;
+            color: black;
+        }
+
+     
+
+        /*针对某一特定的标签使用，只能使用一次*/
+        #id_selector1{
+            border: 3px dashed springgreen;
+            color: aqua;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- <h2 id="id_selector1"> 这是id选择器</h2> -->
+    <!-- <h1 class="class1 class2">这是h1</h1>
+    <h1 class="class2 class1">这是h1</h1> -->
+    <!-- <div>
+        <h1>你好</h1>
+        <p>hello world</p>
+    </div>
+
+    <div>
+        <h1 class="font color">你好</h1>
+        <p class="color">hello world</p>
+    </div> 
+</body>
+
+</html>

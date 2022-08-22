@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex-container {
+        display: flex;
+        flex-direction:row;
+        /*内容对齐*/
+        justify-content: center;
+        /*设置或检索弹性盒子元素在侧轴（纵轴）方向上的对齐方式*/
+        align-items: flex-start;
+        width: 400px;
+        height: 250px;
+        background-color: lightgrey;
+    }
+    .flex-item {
+        background-color: cornflowerblue;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        color: red;
+    }
+</style>
+<body>
+    <!--弹性盒模式：CSS3弹性盒是一种当页面需要适应不同的屏幕大小以及设备类型时确保元素拥有恰当的行为的布局方式-->
+    <div class="flex-container">
+        <div class="flex-item">flex item 1</div>
+        <div class="flex-item">flex item 2</div>
+        <div class="flex-item">flex item 3</div> 
+    </div>
+</body>
+</html>
